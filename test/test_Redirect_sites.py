@@ -24,8 +24,6 @@ def teardown_module():
     driver.quit()
 
 
-
-
 def test_current_location():
 
     driver.get('c:\\work\\selenium-basics\\practice_page.html')
@@ -35,9 +33,6 @@ def test_current_location():
     expectedResult = "file:///C:/work/selenium-basics/practice_page.html"
 
     assert result == expectedResult
-
-
-
 
 
 def test_navigate_to_between_sites():
@@ -66,7 +61,3 @@ def test_navigate_to_between_sites():
     print(current_page)
     #assert part 2
     assert expectedResult_qa == current_page
-
-
-
-
